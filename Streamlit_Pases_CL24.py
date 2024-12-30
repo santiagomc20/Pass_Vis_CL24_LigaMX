@@ -4,14 +4,9 @@ import streamlit as st
 from mplsoccer import Pitch
 import numpy as np
 
-import os
-
 # Título de la aplicación
 st.title("Liga MX Clausura 2024 Pass Map")
 st.subheader("Visualización de Pases con Análisis de Presión y Efectividad del CL24 de la Liga MX")
-
-# Cambiar el directorio de trabajo
-os.chdir(r"d:/VISUAL/STREAMLIT_WORK/CL24/PASES")
 
 # Ahora carga el archivo
 df = pd.read_csv('df_pass.csv')
